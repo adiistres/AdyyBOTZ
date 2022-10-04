@@ -62,7 +62,7 @@ selfnya = false
 multi = true
 nopref = false
 prefa = '.'
-bacaanmenu ='root@AdyyBotz~#' //BUAT FOOTER MENU, GANTI KALO MAU
+bacaanmenu ='𝘩𝘢𝘺𝘰𝘰 𝘯𝘨𝘢𝘱𝘢𝘪𝘯' //BUAT FOOTER MENU, GANTI KALO MAU
 imgmenu = fs.readFileSync(`./media/fake.jpeg`)
 linkmenu = '-'
 ownernya = '60199782326@s.whatsapp.net'
@@ -537,19 +537,19 @@ reply(e)
 }}
 
 if (budy.includes("kontol")){
-reply("JANGAN TOXIC OYY")
+reply("𝘣𝘳𝘶𝘩 𝘸𝘩𝘺 𝘵𝘰𝘹𝘪𝘤?")
 }
 
 if (budy.includes("Assalamualaikum")){
-reply("Waalai'kumsalam")
+reply("𝘸𝘢𝘢𝘭𝘢𝘪𝘬𝘶𝘮𝘴𝘢𝘭𝘢𝘮")
 }
 
 if (budy.includes("assalamualaikum")){
-reply("waalai'kumsalam")
+reply("𝘸𝘢𝘢𝘭𝘢𝘪𝘬𝘶𝘮𝘴𝘢𝘭𝘢𝘮")
 }
 
 if (budy.match("@60199782326")){
-reply('Apasih ngetag ngetag owner ku')
+reply('𝘸𝘩𝘺 𝘵𝘢𝘨 𝘮𝘺 𝘰𝘸𝘯𝘦𝘳')
 }
 
 
@@ -557,7 +557,7 @@ let settingstatus = 0;
 if (new Date() * 1 - settingstatus > 1000) {
   let _uptime = process.uptime();
   let uptime = waktu(_uptime);
-  await conn.setStatus(`Aktif Selama ${uptime}`).catch((_) => _);
+  await conn.setStatus(`𝘢𝘤𝘵𝘪𝘷𝘦 𝘪𝘯 ${uptime}`).catch((_) => _);
   settingstatus = new Date() * 1;
 }
 
@@ -574,11 +574,11 @@ reply(`${mek.quoted.isBaileys}`)
 break
 
 case 'status':
-anu = `Mode Saat Ini : ${selfnya ? ' SELF' : ' PUBLIC'}`
+anu = `𝘤𝘶𝘳𝘳𝘦𝘯𝘵𝘭𝘺 𝘰𝘯 ${selfnya ? '𝘴𝘦𝘭𝘧' : '𝘱𝘶𝘣𝘭𝘪𝘤'} 𝘮𝘰𝘥𝘦`
 sendButMessage(
 from,
 anu,
-`Silakan pilih self/public jika ingin mengubahnya`,
+`𝘤𝘩𝘰𝘰𝘴𝘦 𝘣𝘦𝘭𝘰𝘸 𝘵𝘰 𝘤𝘩𝘢𝘯𝘨𝘦 𝘮𝘰𝘥𝘦`,
  [
  {
 buttonId: `self`,
@@ -609,7 +609,7 @@ case 'jadibot':
     break
 
     case 'listbot':
-    let tekss = '「 *LIST JADIBOT* 」\n'
+    let tekss = '「 *𝘫𝘢𝘥𝘪𝘣𝘰𝘵 𝘭𝘪𝘴𝘵* 」\n'
     for(let i of listjadibot) {
     tekss += `*Nomor* : ${i.jid.split('@')[0]}
 *Nama* : ${i.name}
@@ -629,197 +629,22 @@ let ownerku = `${ownernya}`
 let thubnya = fs.readFileSync(`./media/IMG_0374.MP4`)
 kntl = process.uptime()
 stst = await conn.getStatus(`${sender.split('@')[0]}@c.us`)
-stst = stst.status == 401 ? 'unknown' : stst.status
+stst = stst.status == 401 ? '𝘕𝘰𝘵 𝘧𝘰𝘶𝘯𝘥' : stst.status
 	
-mana =`*┏━──────────────*
-*┃➥ Library : @adiwajshing/baileys*
-*┃➥ Bot Name : AdyyBotz*
-*┃➥ Whatsapp Bot Ver : 0.0.1*
-*┃➥ Creator : Adii*
-*┃➥ Runtime : ${waktu(kntl)}*
-*┃➥ Date : ${tampilTanggal}*
-*┃➥ Time : ${time}*
-*┃➥ User : ${pushname}*
-*┃➥ Bio : ${stst}*
-*┗━──────────────* 
-
-*⌜ I N F O ⌟:*
+mana =`
 *┏━──────────────*
-${x} #sc
-${x} #ping
-${x} #update
-${x} #tes
-*┗━──────────────*
-
-*⌜ O W N E R ⌟:*
-*┏━──────────────*
-${x} > [eval]*
-${x} => [eval async]*
-${x} $ [code]*
-${x} #q*
-${x} #view [read once]*
-${x} #term [code]*
-${x} #upswteks*
-${x} #upswvideo*
-${x} #upswimage*
-${x} #mode [button]*
-${x} #setprefix [button]*
-${x} #setfakeimg [reply]*
-${x} #setthumb [reply]*
-${x} #bc*
-${x} #clearall*
-${x} $setpp*
-${x} #leave*
-${x} #get*
-${x} #setnama*
-${x} #join*
-${x} #status*
-*┗━──────────────*
-
-*⌜ J A D I B O T ⌟:*
-*┏━──────────────*
-${x} #jadibot*
-${x} #stopjadibot*
-${x} #listbot*
-*┗━──────────────* 
-
-*⌜ G R O U P ⌟:*
-*┏━──────────────*
-${x} #tagme*
-${x} #delete*
-${x} #afk*
-${x} #kick*
-${x} #add*
-${x} #group [button]*
-${x} #listadmin*
-${x} #tagall*
-${x} #hidetag*
-${x} #totag*
-${x} #antiviewonce [button]*
-${x} #sider*
-${x} #rulesgroup*
-${x} #promote*
-${x} #demote*
-${x} #revoke*
-${x} #getname*
-${x} #groupinfo*
-${x} #linkgc*
-${x} #isbaileys*
-*┗━──────────────* 
-
-*⌜ W I B U ⌟:*
-*┏━──────────────*
-${x} #waifu*
-${x} #loli*
-${x} #husbu*
-${x} #neko*
-${x} #anime*
-${x} #elaina*
-*┗━──────────────* 
-
-*⌜ O T H E R ⌟:*
-*┏━──────────────*
-${x} #wame*
-${x} #sherelock*
-${x} #listgroup*
-${x} #google*
-${x} #runtime*
-${x} #ping*
-${x} #inspect*
-${x} #pinterest*
-${x} #getpic*
-${x} #linkwa*
-${x} #translate*
-${x} #repeat [teks*4]*
-${x} #cecan*
-${x} #cogan*
-${x} #darkjokes*
-${x} #kontak*
-${x} #ssweb*
-${x} #sc*
-${x} #donasi*
-*┗━──────────────* 
-
-*⌜ S T I C K E R ⌟:*
-*┏━──────────────*
-${x} #take*
-${x} #stiker (error)*
-${x} #toimg*
-${x} #detikvideo*
-${x} #detikvn*
-${x} #tomp4*
-${x} #attp*
-${x} #emoji*
-*┗━──────────────* 
-
-*⌜ D O W N L O A D E R ⌟:*
-*┏━──────────────*
-${x} #playstore*
-${x} #play*
-${x} #ytdl*
-${x} #tiktok*
-${x} #ig [link]*
-${x} #video*
-${x} #igstory*
-${x} #lirik*
-${x} #ytmp3*
-${x} #ytmp4*
-${x} #ytsearch*
-${x} #ytdl*
-*┗━──────────────* 
-
-*⌜ R A N D O M ⌟:*
-*┏━──────────────*
-${x} #wallpapertech
-*┗━──────────────* 
-
-*⌜ G A M E ⌟:*
-*┏━──────────────*
-${x} #suit*
-${x} #tebakgambar*
-*┗━──────────────* 
-
-*⌜ F U N ⌟:*
-*┏━──────────────*
-${x} #readmore*
-${x} #jadian*
-${x} #ganteng*
-${x} #beban*
-${x} #cantik*
-${x} #jelek*
-${x} #hebat*
-${x} #wibu*
-${x} #pakboy*
-${x} #pakgirl*
-${x} #sange*
-${x} #nolep*
-${x} #jahat*
-${x} #baik*
-${x} #wangy*
-${x} #pemenang*
-${x} #kapankah*
-${x} #rate*
-${x} #apakah*
-${x} #citacita*
-*┗━──────────────* 
-
-*⌜ S T O R A G E ⌟:*
-*┏━──────────────*
-${x} #addimg*
-${x} #getimg*
-${x} #listimg*
-${x} #liststicker*
-${x} #addsticker*
-${x} #getsticker*
-${x} #addvn*
-${x} #getvn*
-${x} #listvn*
-${x} #getvideo*
-${x} #listvideo*
-${x} #addvideo*
+*┃➥ 𝘭𝘪𝘣𝘳𝘢𝘳𝘺 : @adiwajshing/baileys*
+*┃➥ 𝘣𝘰𝘵 𝘯𝘢𝘮𝘦 : 𝘢𝘥𝘪𝘪 𝘣𝘰𝘵*
+*┃➥ 𝘷𝘦𝘳𝘴𝘪𝘰𝘯 : 0.0.1*
+*┃➥ 𝘤𝘳𝘦𝘢𝘵𝘰𝘳 : 𝘢𝘥𝘪𝘪 𝘳𝘦𝘯𝘻𝘺*
+*┃➥ 𝘳𝘶𝘯𝘵𝘪𝘮𝘦 : ${waktu(kntl)}*
+*┃➥ 𝘥𝘢𝘵𝘦 : ${tampilTanggal}*
+*┃➥ 𝘵𝘪𝘮𝘦 : ${time}*
+*┃➥ 𝘶𝘴𝘦𝘳 : ${pushname}*
+*┃➥ 𝘶𝘴𝘦𝘳 𝘴𝘵𝘢𝘵𝘶𝘴 : ${stst}*
 *┗━──────────────* 
 `
-sendButMessage(from, `${mana}`, `adyy.bo tz`, [
+sendButMessage(from, `${mana}`, `𝘤𝘭𝘪𝘤𝘬 𝘤𝘰𝘮𝘮𝘢𝘯𝘥 𝘣𝘶𝘵𝘵𝘰𝘯`, [
           {
             buttonId: `donasi`,
             buttonText: {
@@ -1310,31 +1135,19 @@ var priivat = conn.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
 let thumbnya = fs.readFileSync(`./media/IMG_0374.MP4`)
 ruan = process.uptime()
 
-anu =`${x} Mode : ${selfnya ? 'Self' : 'Public'}
-${x} Jam : ${time}
-${x} Tanggal : ${tampilTanggal}
-${x} Prefix : Multi-Prefix
-${x} Chats : ${priivat.length}
-${x} Uptime : ${waktu(ruan)}
+anu =`𝘯𝘰𝘵𝘩𝘪𝘯𝘨
 `
 
 sendButVideo(
           from,
           `${anu}\n${help(x)}`,
-          `© Adyy`,
+          `© 𝘢𝘥𝘺𝘺𝘨𝘢𝘺`,
           thumbnya,
           [
             {
-            buttonId: `donasi`,
-            buttonText: {
-              displayText: `donasi`,
-            },
-            type: 1,
-            },
-            {
               buttonId: `Owner`,
               buttonText: {
-                displayText: `Owner`,
+                displayText: `𝘰𝘸𝘯𝘦𝘳`,
               },
               type: 1,
             },
@@ -1347,7 +1160,7 @@ reply('Bot ini menggunakan sc https://github.com/')
 break
 
 case'donasi':
-reply(`${donasi(x)}`)
+reply(`(x)}`)
 break
 
 case'repeat':
@@ -2823,29 +2636,6 @@ reply(mess.error.api)
 break
 
 
-
-
-case "mode":
-        if (!isOwner) return;
-        sendButMessage(from, `SETTING MODE SELF OR PUBLIC!`, `Silahkan pilih salah satu`, [
-          {
-            buttonId: `self`,
-            buttonText: {
-              displayText: `SELF MODE`,
-            },
-            type: 1,
-          },
-          {
-            buttonId: `public`,
-            buttonText: {
-              displayText: `PUBLIC MODE`,
-            },
-            type: 1,
-          },
-        ]);
-        break;
-        
-        
 case "groupinfo":
 if (!isGroup) return;
 ppUrl = await conn.getProfilePicture(from); // leave empty to get your own
